@@ -1,23 +1,13 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Heading from './components/Heading';
 
-function Header() {
-  return <h1>Hello World!</h1>;
-}
-
-function Heading() {
+export function App(props) {
   return (
-    <h1>This is an h1 heading.</h1>
-  )
-}
-
-function App() {
-  return (
-    <div className='App'>
-      This is the starting code for "Your first component" ungraded lab
-      <Heading />
-    </div>
-  )
-}
-
-export default App;
+    <h1>{props.title}</h1>
+    // <div className='App'>
+    //   <Heading />
+    // </div>
+  );
+};
