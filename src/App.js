@@ -1,13 +1,18 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Heading from './components/Heading';
+import Header from './components/Header';
+import Main from './components/Main';
+import Sidebar from './components/Sidebar';
 
-export function App(props) {
+function App() {
   return (
-    <h1>{props.title}</h1>
-    // <div className='App'>
-    //   <Heading />
-    // </div>
+    <div>
+      <Header name="Anna" color="yellow" />
+      <Main greet="Epilogue" />
+      <Sidebar greet="Hi" />
+    </div>
   );
 };
+
+export default App;
